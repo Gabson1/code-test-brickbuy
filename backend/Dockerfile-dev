@@ -1,0 +1,15 @@
+FROM node:12-alpine
+
+WORKDIR /src
+
+ARG NODE_ENV=development
+
+ENV NODE_ENV $NODE_ENV
+
+COPY package*.json /src/
+
+RUN npm ci
+
+COPY . /src
+
+CMD [ "npm", "start" ]

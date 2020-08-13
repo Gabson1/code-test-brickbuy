@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "The backend for the test project",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "start": "nodemon -L ."
+  },
+  "author": "Peter Schramm",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.4"
+  }
+}

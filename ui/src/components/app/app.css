@@ -1,0 +1,63 @@
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+button, input {
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  background: grey;
+  border-radius: 0.25rem;
+  transition: background-color 0.1s linear;
+}
+
+button {
+  padding: 1rem 2rem;
+}
+
+button:hover {
+  background: #292929
+}
+
+input {
+  padding: 1rem;
+  background: black;
+}
+
+input:focus {
+  background: #292929;
+}
+
+.app {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+}
+
+.app-logo {
+  height: 20vh;
+  pointer-events: none;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.selection {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.selection button {
+  cursor: pointer;
+}

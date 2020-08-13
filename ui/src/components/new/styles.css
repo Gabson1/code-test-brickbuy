@@ -1,0 +1,24 @@
+.panel-new-wrapper {
+    padding: 2rem;
+    background: #404040;
+}
+
+.panel-new-wrapper h1 {
+    color: white;
+}
+
+.panel-new-wrapper form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 50%;
+    margin: 0 50%;
+    transform: translateX(-50%);
+}
+
+.panel-new-wrapper input,
+.panel-new-wrapper button {
+    flex-grow: 1;
+    margin: 1rem 0;
+}
