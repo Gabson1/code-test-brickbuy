@@ -1,6 +1,6 @@
 # Code Test Project
 
-This project aims to be a little coding test with some assignments. It basically allows a user to create a new real estate in the backend with the two properties - address and area in m².
+This project aims to be a little coding test with some assignments. It basically allows a user to create a new real estate in the backend with the two properties - address and size in m².
 
 ## Requirements
 
@@ -46,7 +46,7 @@ Note that this is solely meant as a development platform, therefore the source c
 
 - Simple [hapi web server](https://hapi.dev/)
 - Eslint for code linting
-- 
+
 ### Overall
 
 - Docker images for both UI and backend

@@ -14,7 +14,7 @@ const PanelNew = () => {
     <div className="panel-new-wrapper">
       <h1>Add a new real estate here</h1>
       <Formik
-        initialValues={{ address: '', area: '' }}
+        initialValues={{ address: '', size: '' }}
         onSubmit={handler}
       >
         <Form>
@@ -24,9 +24,9 @@ const PanelNew = () => {
             placeholder="Address of the real estate"
           />
           <Field
-            name="area"
+            name="size"
             type="number"
-            placeholder="Area of the real estate in m²"
+            placeholder="Size of the real estate in m²"
           />
           <button type="submit">Submit</button>
         </Form>

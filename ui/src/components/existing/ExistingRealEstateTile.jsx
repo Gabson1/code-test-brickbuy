@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ExistingPropertyTile = () => {
-  console.log('Todo: show address and area');
+  console.log('Todo: show address and size');
   return (<div />);
 };
 

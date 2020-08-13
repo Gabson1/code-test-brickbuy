@@ -5,11 +5,11 @@ import './styles.css';
 const PanelExisting = () => {
   // const [data, setData] = useState([{
   //   address: 'Street Name 1',
-  //   area: 110,
+  //   size: 110,
   // },
   // {
   //   address: 'Street Name 2',
-  //   area: 70,
+  //   size: 70,
   // }]);
 
   // const fetchHandler = useCallback(async () => {

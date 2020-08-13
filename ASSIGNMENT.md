@@ -16,10 +16,11 @@ I recommend to simply fork this repository and push everything to the new repo. 
 ### 1. Show existing real estate data
 
 **Story**: As a user of the UI I want to be able to see existing real estate data
+
 **Acceptance Criteria**:
 
 - When the "Show existing real estates" button is clicked at least two entries for existing real estates should be shown
-- The entries should contain the address and the area
+- The entries should contain the address and the size
 
 **Notes**:
 
@@ -29,6 +30,7 @@ I recommend to simply fork this repository and push everything to the new repo. 
 ### 2. Pull existing real estate data from the backend
 
 **Story**: As a user of the UI I want to see "real" real estate data
+
 **Acceptance Criteria**:
 
 - The data shown on the existing real estate page should not be fake anymore
@@ -42,26 +44,28 @@ I recommend to simply fork this repository and push everything to the new repo. 
 
 ### 3. Enable creation of new real estates
 
-Story: As a user of the UI I want to be able to create new real estates
-Acceptance Criteria:
+**Story**: As a user of the UI I want to be able to create new real estates
+
+**Acceptance Criteria**:
 
 - On the page for creating a new real estate I want to be able to enter my data
 - The data should be stored in a database
 - The database and connection to database must be part of the docker-compose setup for easy development
 
-Notes:
+**Notes**:
 
 - Again the obvious way for transmitting the data is HTTP POST, however there is other tooling like GraphQL. The latter would be a big bonus, but is at no means required. Do whatever gets the job done.
 - MongoDB is recommended, but any DB will do.
 
 ### 4. Show existing real estate data from the database
 
-Story: As a user of the UI I want to see my newly created estate in the list of existing estates
-Acceptance Criteria:
+**Story**: As a user of the UI I want to see my newly created real estate in the list of existing real estates
+
+**Acceptance Criteria**:
 
 - Any real estate should be loaded from the database and sent to the UI on request (see task #2)
 - Any newly created real estate should be visible on the page of existing real estates
 
-Notes:
+**Notes**:
 
 - This is basically the extension of task #2
