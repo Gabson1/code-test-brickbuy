@@ -13,13 +13,21 @@ This project aims to be a little coding test with some assignments. It basically
 
 ### Docker Compose
 
+Running the applications in docker-compose is the recommended way to start, as this way you can easily let them communicate with each other.
+
+Note that this is solely meant as a development platform, therefore the source code folders have been mounted to the docker containers and are watched, **so all code changes should be visible in real time**.
+
+To start simply use the start.sh script which will install and start all necessary things. Run it via `./start.sh`.
+
+The script will first install the dependencies and then run
+
 - `docker-compose build`
 - `docker-compose up -d`
 
-After building the UI will be available at `http://localhost:3000` - however note it may take a while before the components are built
-The backend will be available on port 4000 with an example route /ping, i.e. `http://localhost:4000/ping`.
+If you already installed the dependencies before, you may simply use these two separately to speed up startup.
 
-Note that this is solely meant as a development platform, therefore the source code folders have been mounted to the docker containers and are watched, **so all code changes should be visible in real time**.
+After the images are built you can find the UI at `http://localhost:3000` - however note it may take a while before the components are compiled.
+The backend will be available on port 4000 with an example route /ping, i.e. `http://localhost:4000/ping`.
 
 ### UI only
 
