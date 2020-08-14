@@ -2,14 +2,6 @@ FROM node:12-alpine
 
 WORKDIR /src
 
-ARG BUILD_NODE_ENV=development
-
-ENV NODE_ENV $BUILD_NODE_ENV
-
-COPY package*.json /src/
-
-RUN npm ci
-
-COPY . /src
+ENV NODE_ENV development
 
 CMD [ "npm", "start" ]
