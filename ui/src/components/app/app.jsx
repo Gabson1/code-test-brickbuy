@@ -3,10 +3,10 @@ import logo from './haus-logo.png';
 import './app.css';
 
 import PanelNew from '../new';
-import PanelExisting from '../existing';
+import PanelExisting from '../existing/panelExisting';
 
 const App = () => {
-  const [currentPanel, setCurrentPanel] = useState('existing');
+  const [currentPanel, setCurrentPanel] = useState('');
 
   return (
     <div className="app">
@@ -19,8 +19,8 @@ const App = () => {
         <button onClick={() => setCurrentPanel('new')} type="button">Add new real estate</button>
       </section>
       <section className="main">
-        {currentPanel === 'existing' && <PanelExisting />}
-        {currentPanel === 'new' && <PanelNew />}
+        { currentPanel === 'existing' && <PanelExisting /> }
+        { currentPanel === 'new' && <PanelNew /> }
       </section>
     </div>
   );

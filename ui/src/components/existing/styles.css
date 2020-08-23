@@ -6,3 +6,7 @@
 .panel-existing-wrapper h1 {
     color: white;
 }
+
+.panel-existing-wrapper .existing-real-estates {
+    border: 1px dotted white;
+}
