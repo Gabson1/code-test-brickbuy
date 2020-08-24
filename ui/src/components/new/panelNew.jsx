@@ -15,15 +15,11 @@ const PanelNew = () => {
       size: size.value,
     };
 
-    const res = await fetch('/estate/new', {
+    await fetch('http://localhost:4000/api/estate/new', {
       method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-        accept: 'application/json',
-      },
-      body: JSON.stringify({ estateData }),
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ address: estateData.address, size: estateData.size }),
     });
-    console.log('--------------------->', res.body);
   });
 
   return (

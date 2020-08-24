@@ -1,6 +1,6 @@
 const Estates = require('../models/estateModel');
 
-exports.getAllEstates = async (req, h) => {
+exports.getAllEstates = async () => {
   try {
     const estate = await Estates.find({}).exec();
     return { estates: estate };
@@ -9,14 +9,13 @@ exports.getAllEstates = async (req, h) => {
   }
 };
 
-exports.addEstate = async (req, h) => {
-  const estateData = {
-    address: req.payload.address,
-    size: req.payload.size,
-  };
-
-  console.log('.----------------------------->', estateData);
+exports.addEstate = async (req) => {
   try {
+    const estateData = {
+      address: req.payload.address,
+      size: req.payload.size,
+    };
+
     const newEstate = await Estates.create(estateData);
     return { message: 'Estate created successfully', estate: newEstate };
   } catch (err) {

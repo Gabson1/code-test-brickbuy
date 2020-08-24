@@ -6,21 +6,23 @@ const PanelExisting = () => {
 
   const fetchExistingEstateData = useCallback(async () => {
     try {
-      const res = await fetch('/estate/all', {
+      const res = await fetch('http://localhost:4000/api/estate/all', {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
       });
-      console.log('---------------------->', res.json);
-      setData(res.data);
+      const estateData = await res.json(res);
+
+      setData(estateData);
     } catch (err) {
       // eslint-disable-next-line no-console
       console.log(`%c There was a problem: ${err}`, 'background: #222; color: white; border: 1px dotted white; padding: 10px');
     }
   });
 
+  // Side-effect for data fetching, will only run once as an empty array of dependencies is defined
   useEffect(() => {
     fetchExistingEstateData();
-  }, [fetchExistingEstateData]);
+  }, []);
 
   return (
     <div className="panel-existing-wrapper">
@@ -29,10 +31,12 @@ const PanelExisting = () => {
         <p>There seems to be nothing here yet...</p>
       )
         : (
-          <div id={`existing-estates-${data.id}`} className="existing-real-estates">
-            <p>{data}</p>
-
-          </div>
+          data.estates.map((estate) => (
+            <div key={`existing-estates-${estate.id}`} className="existing-real-estates">
+              <p>{estate.address}</p>
+              <p>{estate.size}</p>
+            </div>
+          ))
         )}
     </div>
   );

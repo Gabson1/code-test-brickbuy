@@ -6,7 +6,7 @@ import PanelNew from '../new/panelNew';
 import PanelExisting from '../existing/panelExisting';
 
 const App = () => {
-  const [currentPanel, setCurrentPanel] = useState('');
+  const [currentPanel, setCurrentPanel] = useState('existing');
 
   return (
     <div className="app">

@@ -1,7 +1,7 @@
 const controller = require('../controllers/estateController');
 
 module.exports = {
-  path: '/estate/new',
+  path: '/api/estate/new',
   method: 'POST',
   handler: controller.addEstate,
 };

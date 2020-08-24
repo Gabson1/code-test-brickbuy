@@ -21,7 +21,7 @@ const init = async () => {
 
   server.route(routes);
 
-  await dbConnect('mongoUro.');
+  await dbConnect('mongUriComesHere');
 
   await server.start();
   console.log('Server running on %s', server.info.uri);
