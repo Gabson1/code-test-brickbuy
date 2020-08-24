@@ -1,7 +1,9 @@
 const pingRoute = require('./routes/ping');
-const existingEstateRoute = require('./routes/existingEstates');
+const getEstatesRoute = require('./routes/getEstates');
+const addEstateRoute = require('./routes/addEstate');
 
 module.exports = [
   pingRoute,
-  existingEstateRoute,
+  getEstatesRoute,
+  addEstateRoute,
 ];

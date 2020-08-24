@@ -1,13 +1,29 @@
 import React, { useCallback } from 'react';
-
 import { Formik, Form, Field } from 'formik';
+
+import useInput from '../../hooks/useInput';
 
 import './styles.css';
 
 const PanelNew = () => {
-  const handler = useCallback(async (values) => {
-    // TODO: Send the data to the backend
-    console.log(values);
+  const address = useInput('');
+  const size = useInput('');
+
+  const handleNewEstate = useCallback(async () => {
+    const estateData = {
+      address: address.value,
+      size: size.value,
+    };
+
+    const res = await fetch('/estate/new', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        accept: 'application/json',
+      },
+      body: JSON.stringify({ estateData }),
+    });
+    console.log('--------------------->', res.body);
   });
 
   return (
@@ -15,15 +31,19 @@ const PanelNew = () => {
       <h1>Add a new real estate here</h1>
       <Formik
         initialValues={{ address: '', size: '' }}
-        onSubmit={handler}
+        onSubmit={handleNewEstate}
       >
         <Form>
           <Field
+            value={address.value}
+            onChange={address.onChange}
             name="address"
             type="text"
             placeholder="Address of the real estate"
           />
           <Field
+            value={size.value}
+            onChange={size.onChange}
             name="size"
             type="number"
             placeholder="Size of the real estate in m²"

@@ -10,3 +10,8 @@
 .panel-existing-wrapper .existing-real-estates {
     border: 1px dotted white;
 }
+
+.panel-existing-wrapper .no-estates-text {
+    font-weight: 500;
+    font-size: 20px;
+}

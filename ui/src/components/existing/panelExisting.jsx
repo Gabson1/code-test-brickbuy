@@ -1,15 +1,19 @@
 import React, { useCallback, useEffect, useState } from 'react';
-
 import './styles.css';
 
 const PanelExisting = () => {
-  const [data, setData] = useState({ id: 1, address: 'someAddress', size: 112 });
+  const [data, setData] = useState();
 
   const fetchExistingEstateData = useCallback(async () => {
     try {
-      const res = await fetch('https://localhost:4000/estate/existing');
+      const res = await fetch('/estate/all', {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+      });
+      console.log('---------------------->', res.json);
       setData(res.data);
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.log(`%c There was a problem: ${err}`, 'background: #222; color: white; border: 1px dotted white; padding: 10px');
     }
   });
@@ -21,12 +25,15 @@ const PanelExisting = () => {
   return (
     <div className="panel-existing-wrapper">
       <h1>All existing real estates are shown here</h1>
-      { data && (
-      <div id={`existing-estates-${data.id}`} className="existing-real-estates">
-        <p>{`Address: ${data.address}`}</p>
-        <p>{`Size: ${data.size}`}</p>
-      </div>
-      )}
+      { !data ? (
+        <p>There seems to be nothing here yet...</p>
+      )
+        : (
+          <div id={`existing-estates-${data.id}`} className="existing-real-estates">
+            <p>{data}</p>
+
+          </div>
+        )}
     </div>
   );
 };

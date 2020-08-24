@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import logo from './haus-logo.png';
+import logo from '../../assets/haus-logo.png';
 import './app.css';
 
-import PanelNew from '../new';
+import PanelNew from '../new/panelNew';
 import PanelExisting from '../existing/panelExisting';
 
 const App = () => {
