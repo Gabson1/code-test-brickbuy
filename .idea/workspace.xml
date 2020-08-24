@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="298e9c99-dcb5-419a-9cc8-fdca88f8cb07" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/lib/controllers/estateController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/lib/controllers/estateController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/lib/models/estateModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/lib/models/estateModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/lib/routes/ping.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/lib/routes/ping.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/app/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/app/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/existing/panelExisting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/estate/existing/panelExisting.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/existing/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/estate/existing/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/new/panelNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/estate/new/panelNew.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/new/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/estate/new/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/hooks/useInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/hooks/useInput.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598199123085</updated>
-      <workItem from="1598199124107" duration="28271000" />
+      <workItem from="1598199124107" duration="28798000" />
     </task>
     <servers />
   </component>

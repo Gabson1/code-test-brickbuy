@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const Hapi = require('@hapi/hapi');
 const laabr = require('laabr'); // Event logging
 const dbConnect = require('./db');
@@ -19,7 +21,7 @@ const init = async () => {
 
   server.route(routes);
 
-  await dbConnect('pleaseInsertMongoUriHere');
+  await dbConnect(process.env.MONGO_URI);
 
   await server.start();
   console.log('Server running on %s', server.info.uri);
