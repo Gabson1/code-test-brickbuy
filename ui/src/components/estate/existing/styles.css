@@ -1,0 +1,17 @@
+.panel-existing-wrapper {
+    padding: 2rem;
+    background: #404040;
+}
+
+.panel-existing-wrapper h1 {
+    color: white;
+}
+
+.panel-existing-wrapper .estate-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.panel-existing-wrapper .estate-wrapper .existing-real-estates {
+    border: 1px dotted white;
+}

@@ -9,3 +9,5 @@ const useInput = (defaultValue) => {
 };
 
 export default useInput;
+
+// A custom hook for simplifying form stuff

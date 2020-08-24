@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="298e9c99-dcb5-419a-9cc8-fdca88f8cb07" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/lib/controllers/estateController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/lib/controllers/estateController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/lib/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/lib/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/lib/routes/addEstate.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/lib/routes/addEstate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/lib/routes/getEstates.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/lib/routes/getEstates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/lib/models/estateModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/lib/models/estateModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/lib/routes/ping.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/lib/routes/ping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/src/components/app/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/app/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/existing/panelExisting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/existing/panelExisting.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/new/panelNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/new/panelNew.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/existing/panelExisting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/estate/existing/panelExisting.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/existing/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/estate/existing/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/new/panelNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/estate/new/panelNew.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/new/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/estate/new/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/hooks/useInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/hooks/useInput.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +53,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ui/src/components/estate" />
       <recent name="$PROJECT_DIR$/ui/src/assets" />
     </key>
   </component>
@@ -60,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598199123085</updated>
-      <workItem from="1598199124107" duration="21242000" />
+      <workItem from="1598199124107" duration="28271000" />
     </task>
     <servers />
   </component>
@@ -72,10 +77,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="100" y="123" width="1592" height="897" key="DiffContextDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1598210615873" />
-    <state x="420" y="63" width="893" height="763" key="find.popup" timestamp="1598264109540">
+    <state x="420" y="63" width="893" height="763" key="find.popup" timestamp="1598265167638">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="420" y="63" width="893" height="763" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1598264109540" />
+    <state x="420" y="63" width="893" height="763" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1598265167638" />
     <state x="561" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1598199316956">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>

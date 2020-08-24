@@ -1,5 +1,5 @@
 const Hapi = require('@hapi/hapi');
-const laabr = require('laabr');
+const laabr = require('laabr'); // Event logging
 const dbConnect = require('./db');
 const routes = require('./routes');
 
@@ -8,9 +8,7 @@ const init = async () => {
     port: 4000,
     host: '0.0.0.0',
     routes: {
-      cors: {
-        origin: ['*'],
-      },
+      cors: { origin: ['*'] }, // Enable cors for all routes
     },
   });
 
@@ -21,7 +19,7 @@ const init = async () => {
 
   server.route(routes);
 
-  await dbConnect('mongUriComesHere');
+  await dbConnect('pleaseInsertMongoUriHere');
 
   await server.start();
   console.log('Server running on %s', server.info.uri);
