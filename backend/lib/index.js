@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const Hapi = require('@hapi/hapi');
 const laabr = require('laabr'); // Event logging
-const dbConnect = require('./db');
+const dbConnect = require('./db'); // Connect to mongoDB
 const routes = require('./routes');
 
 const init = async () => {
